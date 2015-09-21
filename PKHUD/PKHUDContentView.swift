@@ -25,7 +25,7 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
     }
     
     public required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        super.init(coder: aDecoder)!
     }
 }
 
@@ -41,7 +41,7 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
     }
     
     public required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        super.init(coder: aDecoder)!
     }
 }
 
@@ -153,7 +153,7 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
     }
     
     required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        super.init(coder: aDecoder)!
     }
     
     func commonInit () {
@@ -193,7 +193,7 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
         let viewWidth: CGFloat = bounds.size.width
         let viewHeight: CGFloat = bounds.size.height
         
-        let halfHeight = CGFloat(ceilf(CFloat(viewHeight / 2.0)))
+        //let halfHeight = CGFloat(ceilf(CFloat(viewHeight / 2.0)))
         let quarterHeight = CGFloat(ceilf(CFloat(viewHeight / 4.0)))
         let threeQuarterHeight = CGFloat(ceilf(CFloat(viewHeight / 4.0 * 3.0)))
         
@@ -235,7 +235,7 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
         let viewWidth: CGFloat = bounds.size.width
         let viewHeight: CGFloat = bounds.size.height
         
-        let halfHeight = CGFloat(ceilf(CFloat(viewHeight / 2.0)))
+        //let halfHeight = CGFloat(ceilf(CFloat(viewHeight / 2.0)))
         let quarterHeight = CGFloat(ceilf(CFloat(viewHeight / 4.0)))
         let threeQuarterHeight = CGFloat(ceilf(CFloat(viewHeight / 4.0 * 3.0)))
         

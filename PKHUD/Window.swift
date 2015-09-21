@@ -19,7 +19,7 @@ internal class Window: UIWindow {
 
     required init(coder aDecoder: NSCoder) {
         frameView = FrameView()
-        super.init(coder: aDecoder)
+        super.init(coder: aDecoder)!
         commonInit()
     }
     
